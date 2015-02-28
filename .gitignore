@@ -1,0 +1,12 @@
+/target/
+.project
+/.settings/
+/fess-db*/target/
+/fess-db*/bin/
+/fess-db*/mydbflute/
+/fess-db*/.project
+/fess-db*/.classpath
+/fess-db*/.settings/
+/fess-db*/dependency-reduced-pom.xml
+/fess-db*/dbflute_*/log/*.log
+/fess-db*/dbflute_*/schema/project-schema-fess.xml

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//SEASAR2.1//DTD S2Container//EN"
+    "http://www.seasar.org/dtd/components21.dtd">
+
+<components namespace="dbflute">
+    <include path="j2ee.dicon"/>
+
+    <!-- The components of DBFlute Runtime. -->
+    <component name="introduction" class="org.codelibs.fess.db.allcommon.DBFluteInitializer"/>
+    <component name="invokerAssistant" class="org.codelibs.fess.db.allcommon.ImplementedInvokerAssistant"/>
+    <component name="commonColumnAutoSetupper" class="org.codelibs.fess.db.allcommon.ImplementedCommonColumnAutoSetupper"/>
+    <component name="behaviorSelector" class="org.codelibs.fess.db.allcommon.ImplementedBehaviorSelector"/>
+    <component name="behaviorCommandInvoker" class="org.dbflute.bhv.core.BehaviorCommandInvoker"/>
+
+    <!-- The components of Behavior. -->
+    <component name="boostDocumentRuleBhv" class="org.codelibs.fess.db.exbhv.BoostDocumentRuleBhv"/>
+    <component name="clickLogBhv" class="org.codelibs.fess.db.exbhv.ClickLogBhv"/>
+    <component name="crawlingSessionBhv" class="org.codelibs.fess.db.exbhv.CrawlingSessionBhv"/>
+    <component name="crawlingSessionInfoBhv" class="org.codelibs.fess.db.exbhv.CrawlingSessionInfoBhv"/>
+    <component name="dataConfigToLabelTypeMappingBhv" class="org.codelibs.fess.db.exbhv.DataConfigToLabelTypeMappingBhv"/>
+    <component name="dataConfigToRoleTypeMappingBhv" class="org.codelibs.fess.db.exbhv.DataConfigToRoleTypeMappingBhv"/>
+    <component name="dataCrawlingConfigBhv" class="org.codelibs.fess.db.exbhv.DataCrawlingConfigBhv"/>
+    <component name="failureUrlBhv" class="org.codelibs.fess.db.exbhv.FailureUrlBhv"/>
+    <component name="favoriteLogBhv" class="org.codelibs.fess.db.exbhv.FavoriteLogBhv"/>
+    <component name="fileAuthenticationBhv" class="org.codelibs.fess.db.exbhv.FileAuthenticationBhv"/>
+    <component name="fileConfigToLabelTypeMappingBhv" class="org.codelibs.fess.db.exbhv.FileConfigToLabelTypeMappingBhv"/>
+    <component name="fileConfigToRoleTypeMappingBhv" class="org.codelibs.fess.db.exbhv.FileConfigToRoleTypeMappingBhv"/>
+    <component name="fileCrawlingConfigBhv" class="org.codelibs.fess.db.exbhv.FileCrawlingConfigBhv"/>
+    <component name="jobLogBhv" class="org.codelibs.fess.db.exbhv.JobLogBhv"/>
+    <component name="keyMatchBhv" class="org.codelibs.fess.db.exbhv.KeyMatchBhv"/>
+    <component name="labelTypeBhv" class="org.codelibs.fess.db.exbhv.LabelTypeBhv"/>
+    <component name="labelTypeToRoleTypeMappingBhv" class="org.codelibs.fess.db.exbhv.LabelTypeToRoleTypeMappingBhv"/>
+    <component name="overlappingHostBhv" class="org.codelibs.fess.db.exbhv.OverlappingHostBhv"/>
+    <component name="pathMappingBhv" class="org.codelibs.fess.db.exbhv.PathMappingBhv"/>
+    <component name="requestHeaderBhv" class="org.codelibs.fess.db.exbhv.RequestHeaderBhv"/>
+    <component name="roleTypeBhv" class="org.codelibs.fess.db.exbhv.RoleTypeBhv"/>
+    <component name="scheduledJobBhv" class="org.codelibs.fess.db.exbhv.ScheduledJobBhv"/>
+    <component name="searchFieldLogBhv" class="org.codelibs.fess.db.exbhv.SearchFieldLogBhv"/>
+    <component name="searchLogBhv" class="org.codelibs.fess.db.exbhv.SearchLogBhv"/>
+    <component name="suggestBadWordBhv" class="org.codelibs.fess.db.exbhv.SuggestBadWordBhv"/>
+    <component name="suggestElevateWordBhv" class="org.codelibs.fess.db.exbhv.SuggestElevateWordBhv"/>
+    <component name="userInfoBhv" class="org.codelibs.fess.db.exbhv.UserInfoBhv"/>
+    <component name="webAuthenticationBhv" class="org.codelibs.fess.db.exbhv.WebAuthenticationBhv"/>
+    <component name="webConfigToLabelTypeMappingBhv" class="org.codelibs.fess.db.exbhv.WebConfigToLabelTypeMappingBhv"/>
+    <component name="webConfigToRoleTypeMappingBhv" class="org.codelibs.fess.db.exbhv.WebConfigToRoleTypeMappingBhv"/>
+    <component name="webCrawlingConfigBhv" class="org.codelibs.fess.db.exbhv.WebCrawlingConfigBhv"/>
+</components>
