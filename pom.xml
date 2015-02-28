@@ -47,6 +47,24 @@
     <seasar.version>2.4.46</seasar.version>
     <utflute.version>0.5.0-RC4</utflute.version>
   </properties>
+  <repositories>
+    <repository>
+      <id>codelibs.org</id>
+      <name>CodeLibs Repository</name>
+      <url>http://maven.codelibs.org/</url>
+    </repository>
+    <repository>
+      <name>oss.sonatype.org</name>
+      <id>oss.sonatype.org</id>
+      <url>http://oss.sonatype.org/content/groups/public/</url>
+    </repository>
+    <!-- TODO: remove -->
+    <repository>
+      <id>maven.seasar.org</id>
+      <name>The Seasar Foundation Maven2 Repository</name>
+      <url>http://maven.seasar.org/maven2/</url>
+    </repository>
+  </repositories>
   <build>
     <pluginManagement>
       <plugins>
