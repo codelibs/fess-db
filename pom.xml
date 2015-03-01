@@ -95,8 +95,8 @@
           <version>2.5</version>
           <configuration>
             <excludes>
-              <exclude>**/exbhv/**</exclude>
-              <exclude>**/exentity/**</exclude>
+              <exclude>**/exbhv/**/*.class</exclude>
+              <exclude>**/exentity/**/.class</exclude>
             </excludes>
           </configuration>
         </plugin>
