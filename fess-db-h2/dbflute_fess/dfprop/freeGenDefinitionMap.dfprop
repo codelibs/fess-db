@@ -1,0 +1,82 @@
+map:{
+    # ==========================================================================
+    #                                                                    Fess
+    #                                                                    =======
+    ; FessEnvGen = map:{
+        ; resourceMap = map:{
+            ; baseDir = ../../../fess/src/main
+            ; resourceType = PROP
+            ; resourceFile = $$baseDir$$/resources/fess_env.properties
+        }
+        ; outputMap = map:{
+            ; templateFile = SystemConfig.vm
+            ; outputDirectory = $$baseDir$$/java
+            ; package = org.codelibs.fess.lasta.core.direction
+            ; className = FessEnv
+        }
+        ; tableMap = map:{
+            ; exceptKeyList = list:{}
+            ; groupingKeyMap = map:{}
+            ; extendsPropRequest = null
+            ; superClassPackage = org.dbflute.saflute.core.direction
+            ; superClassSimpleName = ObjectiveConfig
+        }
+    }
+    ; FessConfigGen = map:{
+        ; resourceMap = map:{
+            ; baseDir = ../../../fess/src/main
+            ; resourceType = PROP
+            ; resourceFile = $$baseDir$$/resources/fess_config.properties
+        }
+        ; outputMap = map:{
+            ; templateFile = SystemConfig.vm
+            ; outputDirectory = $$baseDir$$/java
+            ; package = org.codelibs.fess.lasta.core.direction
+            ; className = FessConfig
+        }
+        ; tableMap = map:{
+            ; exceptKeyList = list:{}
+            ; groupingKeyMap = map:{}
+            ; extendsPropRequest = FessEnvGen
+            ; isCheckImplicitOverride = true
+            ; interfacePackage = org.codelibs.fess.lasta.core.direction
+            ; interfaceSimpleName = FessEnv
+            ; superClassPackage = org.codelibs.fess.lasta.core.direction
+            ; superClassSimpleName = FessEnv.SimpleImpl
+        }
+    }
+    ; FessMessageGen = map:{
+        ; resourceMap = map:{
+            ; baseDir = ../../../fess/src/main
+            ; resourceType = PROP
+            ; resourceFile = $$baseDir$$/resources/fess_message_ja.properties
+        }
+        ; outputMap = map:{
+            ; templateFile = UserMessages.vm
+            ; outputDirectory = $$baseDir$$/java
+            ; package = org.codelibs.fess.lasta.web.action
+            ; className = FessMessages
+        }
+        ; tableMap = map:{
+            ; groupingKeyMap = map:{ label = prefix:labels. }
+        }
+    }
+    ; FessJspPathGen = map:{
+        ; resourceMap = map:{
+            ; baseDir = ../../../fess/src/main
+            ; resourceType = FILE_PATH
+        }
+        ; outputMap = map:{
+            ; templateFile = JspPath.vm
+            ; outputDirectory = $$baseDir$$/java
+            ; package = org.codelibs.fess.lasta.web.action
+            ; className = FessJspPath
+        }
+        ; tableMap = map:{
+            ; targetDir = $$baseDir$$/webapp/WEB-INF/view
+            ; targetExt = .jsp
+            ; targetKeyword = 
+            ; exceptPathList = list:{ contain:/view/common/ }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+package ${request.package};
+
+/**
+ * The path definition of JSP.
+ * @author FreeGen
+ */
+public interface ${request.className} {
+#foreach ($column in $table.columnList)
+
+    /** The path of the JSP: ${column.domainPath} */
+#if ($column.capCamelDir && $column.capCamelDir != "")
+    String path_${column.capCamelDir}_${column.capCamelFile} = "${column.domainPath}";
+#else
+    String path_${column.capCamelFile} = "${column.domainPath}";
+#end
+#end
+}
