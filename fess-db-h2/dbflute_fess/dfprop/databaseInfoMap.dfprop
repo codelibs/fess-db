@@ -16,7 +16,7 @@
 #
 map:{
     ; driver   = org.h2.Driver
-    ; url      = jdbc:h2:file:../target/db/fess
+    ; url      = jdbc:h2:file:../../../fess/src/main/h2/webapp/WEB-INF/db/fess
     ; schema   =  
     ; user     = sa
     ; password =  
