@@ -96,7 +96,7 @@
           <configuration>
             <excludes>
               <exclude>**/exbhv/**/*.class</exclude>
-              <exclude>**/exentity/**/.class</exclude>
+              <exclude>**/exentity/**/*.class</exclude>
             </excludes>
           </configuration>
         </plugin>
